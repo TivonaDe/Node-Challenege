@@ -2,7 +2,7 @@
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
-import generateMarkdown from ('./utils/generateMarkdown');
+import generateMarkdown from ('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -81,12 +81,9 @@ inquirer
       validate: (value) => {if(value) return true; else return 'Please enter a value';},
     },
   ])
-    .then((data) => {
+    .then((response) => {
         const filename = 'newReadme.md';
-        const template = generateMarkdown(data);
-        fs.writeFile(filename, template, (err) =>
-            err ? console.log(err) : console.log('Success!')
-      );
+        const template = generateMarkdown(response);
 });
 //TODO: create a table of contents with links to each section of the quetsions
 const template = `# ${data.title}
@@ -127,8 +124,11 @@ function init() {
     inquirer
         .prompt(questions)
         .then((data) => {
-            console.log('Generating README...');
-            writeToFile('./dist/newReadme.md', generateMarkdown(data));
+            const filename = 'newReadme.md';
+            const template = generateMarkdown(data);
+            fs.writeFile(filename, template, (err) =>
+                err ? console.log(err) : console.log('Success!')
+          );
         });
 }
 
