@@ -114,36 +114,13 @@ ${data.license}
 - Email: ${data.email}`;
    
 
+
 // TODO: Create a function to write README file in the newReademe.md file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
   
-const generateMarkdown = (data) => { 
-    return `# ${data.title}
-## Description 
-${data.description}
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [Test](#test)
-- [License](#license)
-- [Questions](#questions)
-## Installation
-${data.installation}
-## Usage
-${data.usage}
-## Contribution
-${data.contribution}
-## Test
-${data.test}
-## License
-${data.license}
-## Questions
-- GitHub: [${data.github}](${data.link})
-- Email: ${data.email}`;
-}
+
 
 //// TODO: Create a function to initialize app
 function init() {
