@@ -123,7 +123,7 @@ function writeToFile(fileName, data ) {
 function init() {
     inquirer
         .prompt(questions)
-        .then((data) => {
+        .then((reponses) => {
             const filename = 'newReadme.md';
             const template = generateMarkdown(data);
             fs.writeFile(filename, template, (err) =>
