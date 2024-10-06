@@ -80,10 +80,7 @@ inquirer
       validate: (value) => {if(value) return true; else return 'Please enter a value';},
     },
   ])
-    .then((response) => {
-        const filename = 'newReadme.md';
-        const template = generateMarkdown(response);
-});
+ 
 //TODO: create a table of contents with links to each section of the quetsions
 const template = `# ${data.title}
 ## Description
@@ -120,14 +117,10 @@ function writeToFile(fileName, data ) {
 
 //// TODO: Create a function to initialize app
 function init() {
-    inquirer
-        .prompt(questions)
-        .then((reponses) => {
-            const filename = 'newReadme.md';
-            const template = generateMarkdown(data);
-            fs.writeFile(filename, template, (err) =>
-                err ? console.log(err) : console.log('Success!')
-          );
+    inquirer.prompt(questions)
+        .then((reponse) => {
+            console.log('Generating Professinal README...');
+            writeToFile(".dist/README.md", generateMarkdown({...responses}));
         });
 }
 
