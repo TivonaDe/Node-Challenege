@@ -119,7 +119,7 @@ function writeToFile(fileName, data ) {
 function init() {
     inquirer.prompt(questions)
         .then((reponse) => {
-            console.log('Generating Professinal README...');
+            console.log('Generating Professinal README.md File...');
             writeToFile("./dist", generateMarkdown({...responses}));
         });
 }
