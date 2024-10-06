@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
   }
 }
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function noLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
   }
 }
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function noLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 function renderLicenseSection(license) {
@@ -48,7 +48,7 @@ function renderLicenseSection(license) {
   }
 }
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function noLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
