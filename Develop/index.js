@@ -6,15 +6,15 @@ import path from 'path';
 // TODO: Create an array of questions for user input
 const questions = [
   'What is the title of your project?',
-    'Please provide a description of your project.',
-    'Please provide installation instructions.',
-    'Please provide usage information.',
-    'Please provide contribution guidelines.',  
-    'Please provide test instructions.',
-    'Please select a license.',
-    'Please enter your GitHub username.',
-    'Please enter your email address.',
-    'Please provide a link to your github.'  
+    'Please provide a description of your project?',
+    'Please provide installation instructions?',
+    'Please provide usage information?',
+    'Please provide contribution guidelines?',  
+    'Please provide test instructions?',
+    'Please select a license?',
+    'Please enter your GitHub username?',
+    'Please enter your email address?',
+    'Please provide a link to your github?'  
 ];
 
 inquirer
