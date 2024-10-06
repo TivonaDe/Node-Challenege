@@ -120,7 +120,7 @@ function init() {
     inquirer.prompt(questions)
         .then((reponse) => {
             console.log('Generating Professinal README...');
-            writeToFile(".dist/README.md", generateMarkdown({...responses}));
+            writeToFile("./dist/README.md", generateMarkdown({...responses}));
         });
 }
 
