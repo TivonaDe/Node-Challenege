@@ -81,7 +81,7 @@ inquirer
     },
   ])
  
-//TODO: create a table of contents with links to each section of the quetsions
+//TODO: create a template with links to each section of the quetsions
 const template = `# ${data.title}
 ## Description
 ${data.description}
@@ -120,7 +120,7 @@ function init() {
     inquirer.prompt(questions)
         .then((reponse) => {
             console.log('Generating Professinal README...');
-            writeToFile("./dist/README.md", generateMarkdown({...responses}));
+            writeToFile("./dist", generateMarkdown({...responses}));
         });
 }
 
