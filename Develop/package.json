@@ -7,14 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TivonaDe/Node-Challenege.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/TivonaDe/Node-Challenege.git"
+  },
+  "keywords": [],
+  "description": "##Description",
   "dependencies": {
     "cors-anywhere": "^0.4.4",
     "fs": "^0.0.1-security",
     "inquirer": "^8.2.4",
     "merge-descriptors": "^2.0.0"
-  },
-  "keywords": [],
-  "description": "##Description"
+  }
 }
