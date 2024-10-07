@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,7 @@
   "description": "This is a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command: node index.js",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4",
+    "inquirer": "^8.2.6",
     "path": "^0.12.7",
     "stack": "^0.1.0",
     "types": "^0.1.1"

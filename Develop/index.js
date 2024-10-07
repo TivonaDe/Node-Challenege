@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
-import fs from 'fs';
-import stack from 'stack';
+import fs, { writeFileSync } from 'fs';
+import generateMarkdown from './utils/generateMarkdown.js';
 // TODO: Create an array of questions for user input
 const questions = [
   'What is the title of your project?',
@@ -124,7 +124,7 @@ let doc = createDoc(data);
 function init() {
     inquirer.prompt(questions).then((reponse) => {
             console.log('Generating Professinal README.md File...');
-            writeToFile("./Develop/newReadMe", generateMarkdown({...responses}));
+            writeFileSync("./Develop/newReadMe", generateMarkdown({...responses}));
         });
 }
 
