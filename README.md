@@ -122,10 +122,3 @@ You are required to submit the following for review:
 ---
 
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-.then((data) => {
-    const filename = `${data.title.toLowerCase().split(' ').join('')}.json`;
-
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
-  });

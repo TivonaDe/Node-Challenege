@@ -82,4 +82,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.export = generateMarkdown;
+module.exports = generateMarkdown;

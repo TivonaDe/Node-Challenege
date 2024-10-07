@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
-import path from 'path';
-
+import stack from 'stack';
 // TODO: Create an array of questions for user input
 const questions = [
   'What is the title of your project?',
@@ -80,6 +79,9 @@ inquirer
       validate: (value) => {if(value) return true; else return 'Please enter a value';},
     },
   ])
+  .then((response) => {
+    console.log(response);
+  });
  
 //TODO: create a template with links to each section of the quetsions
 const template = `# ${data.title}
@@ -110,17 +112,19 @@ ${data.license}
 
 // TODO: Create a function to write README file in the newReademe.md file
 function writeToFile(fileName, data ) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+let doc = createDoc(data);
+
+    fs.writeFile('newReadMe.md', doc, (err) =>
+        err ? console.log(err) : console.log('Success!')
+    );
 }
-  
 
 
 //// TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
-        .then((reponse) => {
+    inquirer.prompt(questions).then((reponse) => {
             console.log('Generating Professinal README.md File...');
-            writeToFile("./dist", generateMarkdown({...responses}));
+            writeToFile("./Develop/newReadMe", generateMarkdown({...responses}));
         });
 }
 
