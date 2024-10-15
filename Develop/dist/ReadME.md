@@ -1,7 +1,7 @@
-# Node Project
-  ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+# Vechile Builder
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   ## Description
-  to develop a professional readme for my homework
+  A command-line application that accepts users input. Gives option to create a vehicle or choose an existingvehicle. Application should allow for creation or selection of a car, truck, or motorbike. Should allow for all vechile information, and allow user to perform actions, that can be seen in the command-line. 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
@@ -10,19 +10,18 @@
   - [License](#license)
   - [Questions](#questions)
   ## Installation
-  Here are some guidelines to help you get started:Create a .gitignore file and include node_modules/ and .DS_Store/ so that your node_modules directory isn't tracked or uploaded to GitHub. Be sure to create your .gitignore file before installing any npm dependencies.Make sure that your repo includes a package.json with the required dependencies. You can create one by running npm init when you first set up the project, before installing any dependencies.Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.Refer to the Fullstack Blog Video Submission Guide for additional guidance on creating a video.Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+  Should use typeescript and inquirer. 
   ## Usage
-  must use to create readme.md files
+  Your task is to update an existing TypeScript command-line application that builds and uses cars to have additional options for motorbikes and trucks. The application prompts the user to create a new vehicle or select an existing vehicle. After going through the creation process or the selection process, the user is able to perform certain actions with the selected vehicle. The user is returned to the actions menu after each action until they decide to exit the application
   ## Contribution
-  all colaborators
+  Repository has a unique name.Repository follows best practices for file structure and naming conventions.Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.Repository contains multiple descriptive commit messages.Repository contains a high-quality readme with description and a link to a walkthrough video.
   ## Test
-  run in terminal
+  A video walk-through demonstrating functionality
   ## License
-  GPL v3 License
+  MIT License
   ## Questions
-  - [GitHub](
-  tivonade)
+  - [GitHub](TivonaDe)
   - Email: devonacanada@gmail.com
-  - [Link](
-  https://github.com/TivonaDe/Node-Challenege.git)
+  - [Link]( https://github.com/TivonaDe/Node-Challenege; https://github.com/TivonaDe/vehicle-builder)
 
+Video Link: https://drive.google.com/file/d/1GNos5dXBNz24zso5ArrccD2nQ7MHJ5bw/view
