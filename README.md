@@ -3,7 +3,7 @@
 ## Discription
 
 Video link: https://youtu.be/GCD9XlhzwOE
-Here is my completed ReadMe generator. After opening the intergrated terminal. First you want to run the 'npm run command' then the 'Run Node Index' command. Then follow the prompts to untill you see the prompt Professional ReadMe generated. Go over to the dist folder and inside yo will see the newly generated ReadMe. If the ReadMe that is generated is acceptable then copy/move to the desired folder. Be careful not to run the generator twice without checking the results of the first because it will be replaced as this app rewrites over the existing file. 
+Here is my completed ReadMe generator. After opening the intergrated terminal. First, if in CodeSpace, you want to run the 'npm run command' then the 'Run Node Index' command, and if not in codespace omit the npm start command. Then follow the prompts to until you see the prompt Professional ReadMe generated. Go over to the dist folder and inside yo will see the newly generated ReadMe. If the ReadMe that is generated is acceptable then copy/move to the desired folder. Be careful not to run the generator twice without checking the results of the first because it will be replaced as this app rewrites over the existing file. 
 
 Repo: https://github.com/TivonaDe/Node-Challenege.git
 
