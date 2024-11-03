@@ -1,20 +1,11 @@
 # 07 Node.js Challenge: Professional README Generator
 
-## Your Task
+## Discription
 
-When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
+Video link: https://youtu.be/GCD9XlhzwOE
+Here is my completed ReadMe generator. After opening the intergrated terminal. Run Node Index. Then follow the prompts to untill you see the prompt Professional ReadMe generated. Go over to the dist folder and inside yo will see the newly generated ReadMe. If the ReadMe that is generated is acceptable then copy/move to the desired folder. Be careful not to run the generator twice without checking the results of the first because it will be replaced as this app rewrites over the existing file. 
 
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
-
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
-
-The application will be invoked by using the following command:
-
-```bash
-node index.js
-```
-
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project.
+Repo: https://github.com/TivonaDe/Node-Challenege.git
 
 
 ## User Story
@@ -43,7 +34,6 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
-write it out to file because it will overwrite the project readme.......
 ```
 
 ## Getting Started
